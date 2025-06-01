@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    
+    element
+    class
+    id
+
+
+
+
+    specific part the the element. parts 
+    we can use pseudoelement and pseudo selector. 
+    
+    -->
+<style>
+    input{
+        font-size: 25px;
+    }
+    input::placeholder{
+        color: red;
+    }
+
+    li::before{
+        content: "👨‍🦰👨‍🦰👩‍🦰";
+    }
+    li::after {
+        content: "Finished. ";
+    }
+    .mypar::first-letter {
+            font-size: 42px;
+            color: darkblue;
+            font-weight: bolder;
+        }
+
+        li:nth-child(2n) {
+        color: red;
+        font-size: 24px;
+    }
+
+    input:focus{
+        background-color: aqua;
+    }
+</style>
+
+    <input type="text" placeholder="Enter your name. ">
+
+
+    <ul>
+        <li>"fruits"</li>
+        <li class="banana">banana</li>
+        <li>apple</li>
+        <li>mango</li>
+    </ul>
+
+    <p class="mypar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores assumenda fugiat eius eum temporibus nisi, ipsum possimus ad sit facere deleniti ex non iste expedita nesciunt aspernatur. Perspiciatis, sit veritatis?
+
+    </p>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        body {
+            font-size: 18px;
+        }
+        .display1 {
+            font-size: 1.5em;
+        }
+        .card {
+            width: 250px;
+            background-color: red;
+            height: 450px;
+        }
+        .column-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+
+        @media only screen and (min-width: 481px) {
+
+            .display1 {
+            font-size: 12px;
+        }
+
+
+        .column-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 25px;
+        }
+        }
+
+        
+        @media only screen and (min-width: 481px) {
+
+            .display1 {
+            font-size: 12px;
+        }
+
+
+        .column-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 25px;
+        }
+    }
+
+    </style>
+    <!-- 
+    how we can achieve teh responsive designs in we dev.
+    useof flex box and grids. 
+    useof grids. 
+
+    use units like % em rem vw vh
+
+    use of media queries. 
+    breakpoints. 
+    
+    
+    -->
+
+    <p class="display1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, odio. Eligendi excepturi exercitationem illum quibusdam!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorum et hic incidunt aliquid consectetur.</p>
+
+
+    <div class="column-container">
+
+
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a maxime nesciunt?</div>
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a maxime nesciunt?</div>
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a maxime nesciunt?</div>
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a maxime nesciunt?</div>
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non a maxime nesciunt?</div>
+    </div>
+</body>
+</html>

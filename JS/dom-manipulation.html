@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="firstdiv">Hi i'm binod</div>
+    <div class="firstclass">Hi second text</div>
+
+
+    <form name="form"> 
+        <input type="text" value="bindo chand" name="username">
+    </form>
+    <script>
+
+        console.log(document.form.username.value)
+    </script>
+
+    <div id="myid">4578</div>
+
+    <script>
+        // dom -- accessing html elements. using javascript. 
+        // dom tree
+
+        document.getElementById('firstdiv');
+        value = document.getElementById('firstdiv').innerText;
+        console.log(value)
+        
+        
+        // value2 = document.getElementsByClassName('firstclass').innerText;
+        // console.log(value2)
+        
+        value3 = document.querySelector('#myid').innerText;
+        value3 = document.querySelector('.firstclass').innerText;
+        console.log(value3)
+
+
+        console.log(document.form.username.value)
+       
+
+
+
+
+
+
+        console.log(typeof(window.document))
+    <!-- </script> -->
+
+</body>
+</html>

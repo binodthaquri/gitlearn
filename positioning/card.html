@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .card {
+            width: 250px;
+            height: 350px;
+            background-color: red;
+            border-radius: 15px;
+            position: relative;
+        }
+        .card:hover {
+            transform: scale(1.01);
+        }
+        .dot {
+            width: 25px;
+            height: 25px;
+            background-color: green;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+        .call-gif {
+            font-size: 16px;
+            color: blue;
+            position: fixed;
+            top: 800px;
+            right: 0;
+            width: 150px;
+            z-index: 0.9;
+        }
+
+        .namaste{
+            font-size: 25px;
+            color: rgb(15, 203, 140);
+            position: absolute;
+            top: 780px;
+            right: 20px;
+            z-index: 1;
+            
+            
+        }
+        .relative-break {
+            position: relative;
+            left: 100px;
+            top: 25px;
+        }
+        
+
+      
+
+        
+    </style>
+</head>
+<body>
+
+    <!-- 
+    positioning. 
+    we use position to break the normal flow of html elemenmts. 
+    we've different positioning properties. 
+    1. static. 
+    2. relative
+        it is related to the original flow. 
+    3. absolute
+        based on the screen or viewport. if parent occurs. related to the parent. 
+    4. sticky
+    5. fixed.
+
+we use top bottom right left propertis to fix the element. 
+
+
+
+
+
+    
+    
+    
+    
+    
+    -->
+
+    <style>
+        nav {
+            width: 70%;
+            background-color: rgb(223, 134, 1);
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 15px;
+            color: aqua;
+            position: sticky;
+            top: 10px;
+            z-index: 10;
+            box-shadow: 2px 2px 3px black;
+            
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        nav ul li a{
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover{
+            background-color: blue;
+            color: white;
+            transform: scale(1.2);
+        }
+        .icon{
+            width: 100px;
+            height: 80px;
+            border: 2px solid;
+            position: absolute;
+            top: 0px;
+            right: 30px;
+            }
+    </style>
+
+z
+
+     <header class="icon">
+        <i class="fa-solid fa-user-plus"></i>
+        <img src="c:\Users\PC\Downloads\iphone 16 prommax.webp" alt="">
+     </header>
+    <nav>
+        <ul>
+            <li><a href="./my about.html">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">Contact us. </a></li>
+        </ul>
+    </nav>
+    <div class="card">
+            <!-- heart button from font awsome.  -->
+            <!-- <i class="fa-solid fa-heart heart"></i> -->
+             <div class="dot">
+
+             </div>
+    </div>
+    <div class="card">
+            <!-- heart button from font awsome.  -->
+            <!-- <i class="fa-solid fa-heart heart"></i> -->
+             <div class="dot">
+
+             </div>
+    </div>
+    <h2 class="relative-break">this is bottom of card. </h2>
+
+
+
+
+        <div class="namaste">
+    
+           <p>Namaste </p>
+        </div>
+    <img src="./call gif icon.gif"  class="call-gif">
+    </body>
+</html>

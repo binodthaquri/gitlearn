@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function - function is reusable block of code. 
+        var num = 8;
+        if (num % 2 == 0) {
+            console.log("even")
+        } else {
+            console.log("odd. ")
+        }
+
+        var num = 12;
+        if (num % 2 == 0) {
+            console.log("even")
+        } else {
+            console.log("odd. ")
+        }
+
+        var num = 15;
+
+
+
+
+        // to get out from this code repetition we've to define functions. 
+        // syntax. - structure or rule. 
+        // function <function_name>(arguments) {
+        //     //statements. 
+        // }
+
+        function chekNumber(num) {
+            if (num % 2 == 0) {
+                console.log("even")
+            } else {
+                console.log("odd. ")
+            }
+        }
+
+
+        // caling funciton. 
+        // funciton_name(parameters.)
+        chekNumber(45)
+        chekNumber(88)
+        chekNumber(49)
+        chekNumber(4578895456)
+
+
+        // create greet function. takes arguments name. 
+        // return good morning. + name./ 
+        //  function greet (name) {
+        //         console.log("good moring"+name)
+        //         }
+
+
+        //         greet("samir sir")
+
+        function greet(name) {
+            console.log("good morning  " + name)
+        }
+
+        greet("binod sir")
+        greet("manoj sir")
+        greet("resham sir")
+
+
+        // is number prime or not. 
+
+        num = 7;
+        function checkEvenorOdd() {
+            if (num % 2 == 0) {
+                console.log("even")
+            } else {
+                console.log("odd")
+            }
+
+        };
+
+
+
+        checkEvenorOdd();
+
+
+
+
+
+
+        // arrow function in js. 
+
+        // function greet(arguments) {
+        //     // body statemernts. 
+        //     return "Welcome" + name;
+        // }
+
+        // arrow funciton is initiated in es6
+        // object in javascript. 
+        // object creation. 
+        // storing values in key value pattern. 
+        // const user = {
+        //     name: 'binod',
+        //     age: 25,
+        //     address: 'Bagbazzar, Kathmandu',
+        //     contact: '9878785485'
+        // }
+
+        // console.log(typeof(user))
+        // console.log(user)
+
+
+        // // accessing elements of objects. 
+        // console.log("object name is " + user.name)
+
+        // // object destructuring injs. 
+        // const {name, age, address, contact} = user
+        // console.log("from object destructuring. ")
+        // console.log('from object destructuring ' + name)
+
+
+
+        // // console.log("welcome in js, ram's fater. ")
+
+        // // arrow function. 
+        // // anonymous function. -- don't have name. 
+        // const welcomefanindra = ((a,b)=> {
+        //     return "welcome fanindra. "+ (a+b)
+        // })
+
+
+        // console.log(welcomefanindra(45,56))
+
+
+
+        // // object creation / destructuring 
+        // // arrow funciton. 
+
+        const user = {
+            name: 'binod chand',
+            address: 'bhagawatimai dailekh',
+            contact: '9742581144',
+        }
+
+        console.log(typeof (user))
+        console.log(user)
+        console.log("object name is  "+ user.address)
+
+
+        const{ name, address, contact} = user
+        console.log("from object destructuring.")
+        console.log("from object destructuring." + name)
+
+        console.log("welocome to js, ram's fathers." )
+        
+            </script>
+</body>
+
+</html>
