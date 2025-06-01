@@ -1,0 +1,21 @@
+button=document.getElementById('mybtn');
+button.addEventListener("click",(e)=> {
+    e.preventDefault();
+    const usernamebox = document.form.username;
+    const username = document.form.username.value;
+    if(username.length > 15) {
+        alert("name cannot be this long. ");
+        usernamebox.focus()
+    }
+    if(username.length===0 || username === " ") {
+        alert("Name cannot be blank.")
+        usernamebox.focus
+    }
+    console.log(username)
+})
+
+
+
+// form valindation. 
+// client side validation. (js form validation. ) 
+// server side validation. 

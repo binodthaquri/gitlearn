@@ -1,0 +1,68 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> html</title>
+</head>
+<body>
+    <div id="firstdiv">i am binod </div>
+    <div class="firstclass">hi second text</div>
+
+
+    <form name="form">
+        <input type="text" value="binod chand" name="username">
+        </form>
+
+        <script>
+            console.log(document.form.username.value)
+
+        </script>
+
+        <script>
+        const first=20
+        const second=16
+        console.log(first/second)
+        var division = first/second
+        var sum = first+second
+        var sub = first-second
+        var multiply = first*second
+        var modulo = first%second
+
+        console.log("division is   "  + division)
+        console.log("multiply is "  + multiply)
+        console.log("sum is " + sum)
+        console.log("sub is " + sub)
+        console.log("modulo is " + modulo)
+
+        console.log("first value is " + first)
+
+        console.log("++++++next operation ns+++")
+
+        if(first > 18) {
+            console.log("nuberis greather than 20 ")
+        } 
+        else{
+            console.log("number is less than 20")
+        }
+
+        marks = 72
+        if(marks > 90) {
+            console.log("A+")
+        }  else if (marks > 80) {
+            console.log("A")
+         } else if (marks > 70)  {
+            console.log("B+"+ )
+         } else if(marks > 60) {
+            console.log("B")
+         }
+
+
+         theory =45
+         practical =25
+
+         if(theory = 30 && practical > 20) {
+            console.log("boys is passed")
+         } else {
+            console.log("boys is failed")
+         }
